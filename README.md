@@ -10,7 +10,12 @@ You need to implement the *internalTransform* method in *EscapeAnalysis* class u
  *A2* is the main class. It takes the input file from *inputs* folder and queries file from *queries* folder.
  
  ###### Running from command-line:
- java -Dtest.file="queries/Q1.txt" A2 -pp -cp "inputs" -w -app -p cg.cha enabled:true	-p cg.spark enabled:false P1
+ 
+ From the project folder (a26235) run the following command in command-line.
+ 
+ java -classpath "bin/:lib/soot-4.3.0-jar-with-dependencies.jar:" -Dtest.file="queries/Q1.txt" submit_a2.A2 -pp -cp "inputs" -w -app -p cg.cha enabled:true	-p cg.spark enabled:false P1
+ 
+ *Note* : You can set the classpath appropriately if you have different file structure. Remember to add path of soot jar to the classpath while running from command line.
  
 - The queries file path is given by -Dtest.file, which can be accessed using System.getProperty("test.file")
 - **-pp** : indicates to prepend java class path to soot classpath. Initially soot classpath is empty
