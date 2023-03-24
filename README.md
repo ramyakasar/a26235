@@ -87,6 +87,7 @@ class P1 {
 			}
 		}
 	}
+	
 
 ```
       
@@ -99,7 +100,7 @@ A:run
 
 should answer
 ```      
-Yes
+No
 No
 ```
 It means, A1.answers[0] should contain Yes, A1.answers[1] should contain No, and so on..
