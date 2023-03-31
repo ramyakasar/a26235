@@ -89,7 +89,7 @@ public class A2 {
 	      		 "-cp" , classPath,
 	      		 "-w",
 	      		 "-app",
-	      		"-p", "cg.cha", "enabled:true",
+	      		"-p", "cg.cha", "enabled:true,apponly:true",
 				"-p", "cg.spark", "enabled:false",
 	      		 argumentClass
 	    		  
